@@ -1,0 +1,20 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+html { 
+font-size: clamp(100%, calc(7.36px + 2.4vmin), 200%);
+}
+header {
+    border: 2px solid #c02020;
+    height: 90px;
+}
+main {
+    border: 2px solid #0202c0;
+    min-height: calc(100vh - 150px);
+}
+footer {
+    border: 2px solid #02c020;
+    height: 60px;
+}
