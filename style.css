@@ -3,6 +3,8 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: #3b3b3b;
+  font-family: 'Lato', sans-serif;
 }
 
 html {
@@ -10,17 +12,214 @@ html {
 }
 
 header {
-  border: 2px solid #c02020;
   height: 90px;
+  display: -ms-grid;
+  display: grid;
+}
+
+header .logo {
+  max-height: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 22.5px;
+}
+
+header span {
+  height: 35px;
+  width: 35px;
+  color: #575757;
 }
 
 main {
-  border: 2px solid #0202c0;
   min-height: calc(100vh - 150px);
 }
 
+main .page-header {
+  height: 25vmax;
+  background: #807f7e;
+  background-image: url("https://www.inclusity.com/wp-content/uploads/2020/09/iStock-508876320-CROP.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: end;
+      align-content: end;
+}
+
+main .page-header h1, main .page-header p {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+main .page-header h1 {
+  font-size: 2em;
+  padding: .25em;
+}
+
+main .page-header p {
+  font-size: .8em;
+  padding: .25em .5em .5em;
+  max-width: 300px;
+}
+
+main .color-bar {
+  display: block;
+  height: 25px;
+  background: -webkit-gradient(linear, left top, right top, from(#ffba75), to(#F7941E));
+  background: linear-gradient(90deg, #ffba75, #F7941E);
+}
+
+main .color-bar-2 {
+  display: block;
+  height: 25px;
+  background: rgba(247, 148, 30, 0.825);
+}
+
+main .main-content {
+  padding: 1em .5em;
+}
+
+main .main-content h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+main .main-content p {
+  font-size: .8em;
+  font-weight: 300;
+  padding: .5em 0;
+}
+
+main .main-content button {
+  padding: .75em;
+  margin: 1em auto;
+  display: block;
+  border: 1px solid #3b3b3b;
+  border: none;
+  border-radius: 10px;
+  background: #fda750;
+  text-transform: uppercase;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition: background 1s ease-out;
+  transition: background 1s ease-out;
+}
+
+main .main-content button:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: #F7941E;
+  text-decoration: underline;
+}
+
 footer {
-  border: 2px solid #02c020;
   height: 60px;
+  background: #e5e4e4;
+}
+
+footer p {
+  color: #575757;
+  font-size: .6em;
+}
+
+.divi-footer-wrapper {
+  padding: 2vmin;
+  max-width: 800px;
+  margin: auto;
+}
+
+.divi-footer-wrapper hr {
+  color: #cccac9;
+}
+
+.socials img {
+  width: 45px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 2vmin 3vmin 0;
+  opacity: .395;
+}
+
+.menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.menus h4 {
+  font-size: 18px !important;
+  font-weight: 600;
+}
+
+.menus li {
+  margin: 0;
+  padding: 0;
+}
+
+.sub-menu {
+  margin: 0;
+  padding: 0 !important;
+}
+
+.sub-menu a, .sub-menu li {
+  color: #575757 !important;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.address {
+  margin: .25em 0;
+}
+
+.footer-item {
+  margin: 2vmin auto;
+}
+
+.logo-img {
+  opacity: .8;
+  width: 125px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.address p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.certificates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.certificate-item {
+  width: 15%;
+  min-width: 100px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.trademark {
+  margin: 4vmin auto;
+  font-size: 16px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
